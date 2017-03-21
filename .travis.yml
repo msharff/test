@@ -9,7 +9,7 @@ install:
   - "npm install bower"
   - "bower install"
   # Install scss_lint gem
-  - "gem install scss_lint"
+  - "gem install scss-lint"
 
 before_script:
 - "export DISPLAY=:99.0"
