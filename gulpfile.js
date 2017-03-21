@@ -176,3 +176,12 @@ gulp.task('test', function(done) {
   }, done).start();
 });
 
+gulp.task('dev-ci', function(callback){
+  'use strict';
+  runSequence(
+    'clean:dev',
+    ['sprites', 'lint:js', 'lint:scss'],
+    ['sass', 'nunjucks'],
+    callback
+        );
+});
