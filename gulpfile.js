@@ -198,7 +198,7 @@ gulp.task('test', function(done) {
   }, done).start();
 });
 
-gulp.task('dev-ci', function(callback){
+gulp.task('dev-ci', function(callback) {
   'use strict';
   runSequence(
     'clean:dev',
@@ -206,4 +206,4 @@ gulp.task('dev-ci', function(callback){
     ['sass', 'nunjucks'],
     callback
         );
-});
+})
