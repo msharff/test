@@ -33,7 +33,7 @@ if (process.env.CI) {
 return plumber({
 errorHandler: function(err) {
   // Changes first line of error into red
-throw Error(gutil.color.red(err.message));
+throw Error(gutil.colors.red(err.message));
 }
 });
 } else {
